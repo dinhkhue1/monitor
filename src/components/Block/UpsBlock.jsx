@@ -19,10 +19,7 @@ const UpsBlock = () => (
       padding: 0
     }}
     bordered={true}
-    style={{
-      height: '100%',
-      width: '100%'
-    }}
+
   >
     {data.map((item, idx) => (
       <div

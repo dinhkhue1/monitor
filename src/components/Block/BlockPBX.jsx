@@ -7,7 +7,7 @@ const data2 = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004'];
 
 const BlockPBX = () => (
   <Card
-    title="1.UPS"
+    title="4. PBX"
     headStyle={{
       background: Colors.block.ups,
       color: '#1f1f1f',
@@ -21,11 +21,32 @@ const BlockPBX = () => (
     bordered={true}
     style={{
       height: '100%',
-      width: '100%'
+      width: '100%',
+      background: '#1f1f1f',
     }}
   >
     <div>
-    {data1.map((item, idx) => (
+      {data1.map((item, idx) => (
+        <div
+          key={idx}
+          style={{
+            background: Colors.component,
+            padding: '8px',
+            margin: 8,
+            borderRadius: 6,
+            color: Colors.text,
+            border: '1px solid white',
+            boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
+            cursor: 'move',
+          }}
+        >
+          {item}
+        </div>
+
+      ))}
+    </div>
+
+    {data2.map((item, idx) => (
       <div
         key={idx}
         style={{
@@ -41,27 +62,7 @@ const BlockPBX = () => (
       >
         {item}
       </div>
-      
     ))}
-    </div>
-
-      {data2.map((item, idx) => (
-            <div
-              key={idx}
-              style={{
-                background: Colors.component,
-                padding: '8px',
-                margin: 8,
-                borderRadius: 6,
-                color: Colors.text,
-                border: '1px solid white',
-                boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-                cursor: 'move',
-              }}
-            >
-              {item}
-            </div>
-            ))}
   </Card>
 );
 
