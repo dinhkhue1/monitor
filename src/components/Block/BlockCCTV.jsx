@@ -13,7 +13,7 @@ const BlockCCTV = () => (
       textAlign: 'center',
     }}
     bodyStyle={{
-      background: '#1f1f1f',
+      background: 'none',
       color: Colors.text,
       padding: 0
     }}
@@ -21,7 +21,7 @@ const BlockCCTV = () => (
     style={{
       height: '100%',
       width: '100%',
-      background: '#1f1f1f',
+      background: 'none',
     }}
   >
     <div style={{margin: '100px 0px 0px 0px'}}><ItemList data={data} color = {Colors.yellow1} margin={'20px 5px 0px 5px'} /></div>

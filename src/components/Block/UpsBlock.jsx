@@ -16,12 +16,14 @@ const UpsBlock = () => (
       textAlign: 'center',
     }}
     bodyStyle={{
-      background: '#1f1f1f',
+      background: 'none',
       color: Colors.text,
       padding: 0
     }}
     bordered={true}
-
+    style={{
+      background: 'none',
+    }}
   >
     <div>
       <ItemList data={data1} color = {Colors.component} />

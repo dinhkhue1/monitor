@@ -15,7 +15,7 @@ const BlockPBX = () => (
       textAlign: 'center',
     }}
     bodyStyle={{
-      background: '#1f1f1f',
+      background: 'none',
       color: Colors.text,
       padding: 0
     }}
@@ -23,7 +23,7 @@ const BlockPBX = () => (
     style={{
       height: '100%',
       width: '100%',
-      background: '#1f1f1f',
+      background: 'none',
     }}
   >
     <div style={{margin: '20px 0px 20px 0px'}}><ItemList data={data1} color = {Colors.yellow1} /></div>

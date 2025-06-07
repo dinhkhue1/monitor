@@ -23,7 +23,7 @@ const BlockSpeaker = () => (
     style={{
       height: '100%',
       width: '100%',
-      background: '#1f1f1f',
+      background: 'none',
     }}
   >
     <div

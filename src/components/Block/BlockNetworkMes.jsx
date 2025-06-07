@@ -16,7 +16,7 @@ const BlockNetworkMes = () => (
       textAlign: 'center',
     }}
     bodyStyle={{
-      background: '#1f1f1f',
+      background: 'none',
       color: Colors.text,
       padding: 0
     }}
@@ -24,7 +24,7 @@ const BlockNetworkMes = () => (
     style={{
       height: '100%',
       width: '100%',
-      background: '#1f1f1f',
+      background: 'none',
     }}
   >
     <div style={{margin: '260px 0px 0px 0px'}}><ItemList data={data1} color = {Colors.orange} /></div>

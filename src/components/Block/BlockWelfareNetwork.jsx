@@ -14,7 +14,7 @@ const BlockWelfareNetwork = () => (
       textAlign: 'center',
     }}
     bodyStyle={{
-      background: '#1f1f1f',
+      background: 'none',
       color: Colors.text,
       padding: 0
     }}
@@ -22,7 +22,7 @@ const BlockWelfareNetwork = () => (
     style={{
       width: '100%',
       height: '100%',
-      background: '#1f1f1f',
+      background: 'none',
     }}
   >
     {data.map((item, idx) => (

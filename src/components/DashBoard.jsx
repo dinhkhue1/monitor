@@ -15,12 +15,22 @@ import BlockBirdBackup from "../components/Block/BlockBirdBackup";
 import BlockInternetLineTop from "./Block/BlockInternetLineTop";
 import BlockInternetLineDown from "./Block/BlockInternetLineDown";
 import { Card } from 'antd';
+import Background from '../style/images/slider_img_5.jpg';
 
 const { Content } = Layout;
 
 const App = () => (
   <Layout>
-    <Content style={{ minHeight: '100vh', background: Colors.background, padding: 20 }}>
+    <Content
+    style={{
+      minHeight: '100vh',
+      backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${Background})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center',
+      padding: 20,
+    }}
+    >
       <Row gutter={20} >
         <Col span={18}
           style={{
@@ -32,7 +42,7 @@ const App = () => (
           <Row>
             <div
               style={{
-                background: '#1f1f1f',
+                
                 color: '#ffffff',
                 border: '1px solid #ffffff',
                 padding: '16px',
@@ -216,7 +226,7 @@ const App = () => (
               <Row>
                 <div
                   style={{
-                    background: '#1f1f1f',
+                    
                     color: '#ffffff',
                     border: '1px solid #ffffff',
                     padding: '16px',
@@ -270,7 +280,7 @@ const App = () => (
               <Row>
                 <div
                   style={{
-                    background: '#1f1f1f',
+                    
                     color: '#ffffff',
                     border: '1px solid #ffffff',
                     padding: '16px',
@@ -284,7 +294,7 @@ const App = () => (
                 </div>
               </Row>
               <Row style={{
-                    background: '#1f1f1f',
+                    
                     color: '#ffffff',
                     border: '1px dashed #ffffff',
                     padding: '16px',
@@ -296,7 +306,7 @@ const App = () => (
               </Row>
               <Row
               style={{
-                background: '#1f1f1f',
+                
                 color: '#ffffff',
                 border: '1px dashed #ffffff',
                 padding: '16px',

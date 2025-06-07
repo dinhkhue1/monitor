@@ -15,7 +15,7 @@ const BlockServerMes = () => (
       textAlign: 'center',
     }}
     bodyStyle={{
-      background: '#1f1f1f',
+      background: 'none',
       color: Colors.text,
       padding: 0
     }}
@@ -23,7 +23,7 @@ const BlockServerMes = () => (
     style={{
       height: '100%',
       width: '100%',
-      background: '#1f1f1f',
+      background: 'none',
     }}
   >
     <div><ItemList data={data1} color = {Colors.orange} /></div>
