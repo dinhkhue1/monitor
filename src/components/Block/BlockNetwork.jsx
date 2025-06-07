@@ -7,7 +7,7 @@ const data2 = [ 'UPS - 001', 'UPS - 004', 'UPS - 005', 'UPS - 001'];
 const data3 = ['UPS - FAC 2','UPS - 005'];
 const BlockNetwork = () => (
   <Card
-    title="1.UPS"
+    title="5. NETWORK"
     headStyle={{
       background: Colors.block.ups,
       color: '#1f1f1f',
@@ -21,7 +21,8 @@ const BlockNetwork = () => (
     bordered={true}
     style={{
       height: '100%',
-      width: '100%'
+      width: '100%',
+      background: '#1f1f1f',
     }}
   >
     {data1.map((item, idx) => (

@@ -7,7 +7,7 @@ const data = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004', 'UPS - 005
 
 const BlockEmpty = () => (
   <Card
-    title="1.UPS"
+    title="3. EMPTY"
     headStyle={{
       background: Colors.block.ups,
       color: '#1f1f1f',
@@ -21,7 +21,8 @@ const BlockEmpty = () => (
     bordered={true}
     style={{
       height: '100%',
-      width: '100%'
+      width: '100%',
+      background: '#1f1f1f',
     }}
   >
     {data.map((item, idx) => (
