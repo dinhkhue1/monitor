@@ -2,9 +2,9 @@ import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 
-const data = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004', 'UPS - 005', 'UPS - 001', 'UPS - 004', 'UPS - 005'];
-
-
+const data1 = ['UPS - FAC 2'];
+const data2 = [ 'UPS - 001', 'UPS - 004', 'UPS - 005', 'UPS - 001'];
+const data3 = ['UPS - FAC 2','UPS - 005'];
 const BlockNetwork = () => (
   <Card
     title="1.UPS"
@@ -24,11 +24,45 @@ const BlockNetwork = () => (
       width: '100%'
     }}
   >
-    {data.map((item, idx) => (
+    {data1.map((item, idx) => (
       <div
         key={idx}
         style={{
-          background: Colors.component,
+          background: Colors.orange,
+          padding: '8px',
+          margin: 8,
+          borderRadius: 6,
+          color: Colors.text,
+          border: '1px solid white',
+          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
+          cursor: 'move',
+        }}
+      >
+        {item}
+      </div>
+    ))}
+    {data2.map((item, idx) => (
+      <div
+        key={idx}
+        style={{
+          background: Colors.purple,
+          padding: '8px',
+          margin: 8,
+          borderRadius: 6,
+          color: Colors.text,
+          border: '1px solid white',
+          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
+          cursor: 'move',
+        }}
+      >
+        {item}
+      </div>
+    ))}
+    {data3.map((item, idx) => (
+      <div
+        key={idx}
+        style={{
+          background: Colors.orange,
           padding: '8px',
           margin: 8,
           borderRadius: 6,

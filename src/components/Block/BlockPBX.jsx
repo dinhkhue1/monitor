@@ -29,7 +29,7 @@ const BlockPBX = () => (
       <div
         key={idx}
         style={{
-          background: Colors.component,
+          background: Colors.yellow2,
           padding: '8px',
           margin: 8,
           borderRadius: 6,
@@ -49,7 +49,7 @@ const BlockPBX = () => (
             <div
               key={idx}
               style={{
-                background: Colors.component,
+                background: Colors.yellow1,
                 padding: '8px',
                 margin: 8,
                 borderRadius: 6,
