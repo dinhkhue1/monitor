@@ -8,6 +8,7 @@ const Colors = {
   orange: '#EEB575',
   // purple: '#9788F8',
   purple: '#ccccff',
+  gray: '#ABAEB1',
   block: {
     ups: '#5A9DF4',
     speaker: '#d9d9d9',

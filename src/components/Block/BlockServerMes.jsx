@@ -1,13 +1,14 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
+import ItemList from '../common/ItemList'
 
-const data = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004', 'UPS - 005'];
-
+const data1 = ['SWITCH L2- MES SERVER', 'SANSWITCH', 'SWITCH L3- MES SERVER'];
+const data2 = ['SPC Server', 'Nakivo Server', 'VIPM', 'EXSI-04', 'EXSI-03', 'EXSI-02', 'EXSI-01', 'Storage'];
 
 const BlockServerMes = () => (
   <Card
-    title="1.UPS"
+    title="7.SERVER MES"
     headStyle={{
       background: Colors.block.ups,
       color: '#1f1f1f',
@@ -16,6 +17,7 @@ const BlockServerMes = () => (
     bodyStyle={{
       background: '#1f1f1f',
       color: Colors.text,
+      padding: 0
     }}
     bordered={true}
     style={{
@@ -24,24 +26,8 @@ const BlockServerMes = () => (
       background: '#1f1f1f',
     }}
   >
-    {data.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.component,
-          padding: '8px 12px',
-          marginBottom: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          fontWeight: 'bold',
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move', // giống biểu tượng cross cursor của bạn
-        }}
-      >
-        {item}
-      </div>
-    ))}
+    <div><ItemList data={data1} color = {Colors.orange} /></div>
+    <div><ItemList data={data2} color = {Colors.purple} /></div>
   </Card>
 );
 

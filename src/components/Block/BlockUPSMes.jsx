@@ -1,13 +1,13 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
+import ItemList from '../common/ItemList'
 
-const data = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004', 'UPS - 005'];
-
+const data = ['UPS MES SERVER', 'Packpin', 'Packpin', 'Packpin', 'Packpin', 'Packpin'];
 
 const BlockUPSMes = () => (
   <Card
-    title="1.UPS"
+    title="6.UPS MES SERVER"
     headStyle={{
       background: Colors.block.ups,
       color: '#1f1f1f',
@@ -16,6 +16,7 @@ const BlockUPSMes = () => (
     bodyStyle={{
       background: '#1f1f1f',
       color: Colors.text,
+      padding: 0
     }}
     bordered={true}
     style={{
@@ -24,25 +25,18 @@ const BlockUPSMes = () => (
       background: '#1f1f1f',
     }}
   >
-    {data.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.component,
-          padding: '8px 12px',
-          marginBottom: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          fontWeight: 'bold',
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move', // giống biểu tượng cross cursor của bạn
-        }}
-      >
-        {item}
-      </div>
-    ))}
+    <div
+      style={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '220px 0px 0px 0px'
+      }}
+    >
+      <ItemList data={data} color = {Colors.component}/>
+    </div>
   </Card>
 );
 
 export default BlockUPSMes;
+

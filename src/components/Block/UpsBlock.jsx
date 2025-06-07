@@ -1,8 +1,10 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
+import ItemList from '../common/ItemList'
 
-const data = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004', 'UPS - 005'];
+const data1 = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001'];
+const data2 = ['UPS - 003', 'UPS - 004', 'UPS - 005']
 
 
 const UpsBlock = () => (
@@ -21,23 +23,12 @@ const UpsBlock = () => (
     bordered={true}
 
   >
-    {data.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.component,
-          padding: '8px',
-          margin: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move',
-        }}
-      >
-        {item}
-      </div>
-    ))}
+    <div>
+      <ItemList data={data1} color = {Colors.component} />
+    </div>
+    <div style={{marginTop: 30}}>
+      <ItemList data={data2} color = {Colors.component}/>
+    </div>
   </Card>
 );
 

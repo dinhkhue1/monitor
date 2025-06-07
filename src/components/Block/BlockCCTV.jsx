@@ -1,10 +1,9 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
+import ItemList from '../common/ItemList'
 
-const data = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004', 'UPS - 005', 'UPS - 001', 'UPS - 004', 'UPS - 005'];
-
-
+const data = ['NVR- 192.168.146.207', 'NVR- 192.168.146.206', 'NVR- 192.168.146.205', 'NVR- 192.168.146.202', 'NVR- 192.168.146.200', 'NVR- 192.168.146.203', 'NVR- 192.168.146.204'];
 const BlockCCTV = () => (
   <Card
     title="6. CCTV"
@@ -25,23 +24,7 @@ const BlockCCTV = () => (
       background: '#1f1f1f',
     }}
   >
-    {data.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.component,
-          padding: '8px',
-          margin: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move',
-        }}
-      >
-        {item}
-      </div>
-    ))}
+    <div style={{margin: '100px 0px 0px 0px'}}><ItemList data={data} color = {Colors.yellow1} margin={'20px 5px 0px 5px'} /></div>
   </Card>
 );
 

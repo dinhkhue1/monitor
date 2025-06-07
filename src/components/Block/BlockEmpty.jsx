@@ -1,13 +1,11 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
-
-const data = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001', 'UPS - 004', 'UPS - 005', 'UPS - 001', 'UPS - 004', 'UPS - 005'];
-
+import Window from '../../style/images/Window.png';
 
 const BlockEmpty = () => (
   <Card
-    title="3. EMPTY"
+    title="3.EMPTY"
     headStyle={{
       background: Colors.block.ups,
       color: '#1f1f1f',
@@ -15,33 +13,36 @@ const BlockEmpty = () => (
     }}
     bodyStyle={{
       background: '#1f1f1f',
-      color: Colors.text,
-      padding: 0
+      padding: 0,
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
     }}
-    bordered={true}
+    bordered
     style={{
       height: '100%',
       width: '100%',
       background: '#1f1f1f',
+      display: 'flex',
+      flexDirection: 'column',
     }}
   >
-    {data.map((item, idx) => (
-      <div
-        key={idx}
+    <div style={{ flex: 1, position: 'relative' }}>
+      <img
+        src={Window}
+        alt="Empty Rack"
         style={{
-          background: Colors.component,
-          padding: '8px',
-          margin: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom:0
         }}
-      >
-        {item}
-      </div>
-    ))}
+      />
+    </div>
   </Card>
 );
 

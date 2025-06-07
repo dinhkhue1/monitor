@@ -1,10 +1,11 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
+import ItemList from '../common/ItemList'
 
-const data1 = ['UPS - FAC 2'];
-const data2 = [ 'UPS - 001', 'UPS - 004', 'UPS - 005', 'UPS - 001'];
-const data3 = ['UPS - FAC 2','UPS - 005'];
+const data1 = ['FIREWALL ( 150.254)', 'FIREWALL ( 204.1)'];
+const data2 = [ 'DNS', 'EPP-SERVER', 'EPS-SERVER', 'MESDB OLD-SERVER', 'MESAPP OLD-SERVER', 'ERPDB OLD -SERVER', 'ERPAPP OLD -SERVER'];
+const data3 = ['SWITCH L3- LINE','SWITCH L3- OFFICE'];
 const BlockNetwork = () => (
   <Card
     title="5. NETWORK"
@@ -25,57 +26,9 @@ const BlockNetwork = () => (
       background: '#1f1f1f',
     }}
   >
-    {data1.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.orange,
-          padding: '8px',
-          margin: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move',
-        }}
-      >
-        {item}
-      </div>
-    ))}
-    {data2.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.purple,
-          padding: '8px',
-          margin: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move',
-        }}
-      >
-        {item}
-      </div>
-    ))}
-    {data3.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.orange,
-          padding: '8px',
-          margin: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          border: '1px solid white',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move',
-        }}
-      >
-        {item}
-      </div>
-    ))}
+    <div><ItemList data={data1} color = {Colors.orange} /></div>
+    <div><ItemList data={data2} color = {Colors.purple} /></div>
+    <div><ItemList data={data3} color = {Colors.orange} /></div>
   </Card>
 );
 
