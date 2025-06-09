@@ -3,8 +3,30 @@ import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 import ItemList from '../common/ItemList'
 
-const data1 = ['NVR- 192.168.146.209', 'NVR- 192.168.146.208'];
-const data2 = ['PBX SYSTEM', 'PBX SYSTEM', 'PBX SYSTEM'];
+const data1 = [
+  {
+    label : 'NVR- 192.168.146.209',
+    status: 'START'
+  },
+  {
+    label : 'NVR- 192.168.146.208',
+    status: 'STOP'
+  }
+]
+const data2 = [
+  {
+    label : 'PBX SYSTEM',
+    status: 'START'
+  },
+  {
+    label : 'PBX SYSTEM',
+    status: 'STOP'
+  },
+  {
+    label : 'PBX SYSTEM',
+    status: 'STOP'
+  }
+]
 
 const BlockPBX = () => (
   <Card

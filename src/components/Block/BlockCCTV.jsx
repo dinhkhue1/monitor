@@ -3,7 +3,32 @@ import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 import ItemList from '../common/ItemList'
 
-const data = ['NVR- 192.168.146.207', 'NVR- 192.168.146.206', 'NVR- 192.168.146.205', 'NVR- 192.168.146.202', 'NVR- 192.168.146.200', 'NVR- 192.168.146.203', 'NVR- 192.168.146.204'];
+const data = [
+  {
+    label : 'NVR- 192.168.146.207',
+    status: 'STOP'
+  },
+  {
+    label : 'NVR- 192.168.146.206',
+    status: 'START'
+  },
+  {
+    label : 'NVR- 192.168.146.202',
+    status: 'STOP'
+  },
+  {
+    label : 'NVR- 192.168.146.200',
+    status: 'START'
+  },
+  {
+    label : 'NVR- 192.168.146.203',
+    status: 'START'
+  },
+  {
+    label : 'NVR- 192.168.146.204',
+    status: 'START'
+  }
+]
 const BlockCCTV = () => (
   <Card
     title="6. CCTV"

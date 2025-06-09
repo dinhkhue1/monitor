@@ -3,8 +3,36 @@ import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 import ItemList from '../common/ItemList'
 
-const data1 = ['UPS - FAC 2', 'UPS - FAC 3', 'UPS - 001'];
-const data2 = ['UPS - 003', 'UPS - 004', 'UPS - 005']
+const data1 = [
+  {
+    label : 'UPS - FAC 2',
+    status: 'START'
+  },
+  {
+    label : 'UPS - FAC 3',
+    status: 'STOP'
+  },
+  {
+    label : 'UPS - 001',
+    status: 'STOP'
+  }
+]
+
+const data2 = [
+  {
+    label : 'UPS - 003',
+    status: 'START'
+  },
+  {
+    label : 'UPS - 004',
+    status: 'START'
+  },
+  {
+    label : 'UPS - 005',
+    status: 'START'
+  }
+]
+
 
 
 const UpsBlock = () => (

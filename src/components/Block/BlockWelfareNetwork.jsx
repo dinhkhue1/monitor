@@ -1,9 +1,22 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 import { Card } from 'antd';
+import ItemList from '../common/ItemList'
 
-const data = ['SWITCH L2 - FLOOR 4th', 'SWITCH L2 - FLOOR 3rd', 'SWITCH L2 - FLOOR 2nd'];
-
+const data = [
+  {
+    label : 'SWITCH L2 - FLOOR 4th',
+    status: 'START'
+  },
+  {
+    label : 'SWITCH L2 - FLOOR 3rd',
+    status: 'STOP'
+  },
+  {
+    label : 'SWITCH L2 - FLOOR 2nd',
+    status: 'STOP'
+  }
+]
 
 const BlockWelfareNetwork = () => (
   <Card
@@ -25,24 +38,16 @@ const BlockWelfareNetwork = () => (
       background: 'none',
     }}
   >
-    {data.map((item, idx) => (
-      <div
-        key={idx}
-        style={{
-          background: Colors.orange,
-          padding: '8px',
-          margin: 8,
-          borderRadius: 6,
-          color: Colors.text,
-          border: '1px solid rgba(255, 255, 255, 0.5)',
-          boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
-          cursor: 'move',
-          marginTop: idx === 0 ? 50 : 8
-        }}
-      >
-        {item}
-      </div>
-    ))}
+    <div
+      style={{
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        margin: '50px 0px 0px 0px'
+      }}
+    >
+      <ItemList data={data} color = {Colors.component}/>
+    </div>
   </Card>
 );
 

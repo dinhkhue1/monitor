@@ -3,8 +3,26 @@ import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 import ItemList from '../common/ItemList'; 
 
-const data1 = ['SWITCH L3- MES NETWORK'];
-const data2 = ['UPS MES NETWORK', 'Packpin', 'Packpin']
+const data1 = [
+  {
+    label : 'SWITCH L3- MES NETWORK',
+    status: 'START'
+  }
+]
+const data2 = [
+  {
+    label : 'UPS MES NETWORK',
+    status: 'START'
+  },
+  {
+    label : 'Packpin',
+    status: 'STOP'
+  },
+  {
+    label : 'Packpin',
+    status: 'STOP'
+  }
+]
 
 
 const BlockNetworkMes = () => (

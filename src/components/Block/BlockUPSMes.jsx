@@ -3,7 +3,32 @@ import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 import ItemList from '../common/ItemList'
 
-const data = ['UPS MES SERVER', 'Packpin', 'Packpin', 'Packpin', 'Packpin', 'Packpin'];
+const data = [
+  {
+    label : 'UPS MES SERVER',
+    status: 'START'
+  },
+  {
+    label : 'Packpin',
+    status: 'STOP'
+  },
+  {
+    label : 'Packpin',
+    status: 'STOP'
+  },
+  {
+    label : 'Packpin',
+    status: 'START'
+  },
+  {
+    label : 'Packpin',
+    status: 'STOP'
+  },
+  {
+    label : 'Packpin',
+    status: 'STOP'
+  }
+]
 
 const BlockUPSMes = () => (
   <Card
