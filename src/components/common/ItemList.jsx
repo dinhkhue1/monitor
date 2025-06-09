@@ -1,7 +1,7 @@
 import React from 'react';
 import Colors from '../../help/rootcss';
 
-const ItemList = ({ data, color, margin= '5px' }) => {
+const ItemList = ({ data, color, margin = '5px' }) => {
   return (
     <div>
       {data.map((item, idx) => (
@@ -13,7 +13,7 @@ const ItemList = ({ data, color, margin= '5px' }) => {
             margin,
             borderRadius: 6,
             color: Colors.text,
-            border: '1px solid white',
+            border: '1px solid rgba(255, 255, 255, 0.5)',
             boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
             cursor: 'move',
           }}

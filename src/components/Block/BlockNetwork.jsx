@@ -24,6 +24,7 @@ const BlockNetwork = () => (
       height: '100%',
       width: '100%',
       background: 'none',
+      border: '1px solid rgba(255, 255, 255, 0.5)',
     }}
   >
     <div><ItemList data={data1} color = {Colors.orange} /></div>

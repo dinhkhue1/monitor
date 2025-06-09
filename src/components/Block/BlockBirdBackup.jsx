@@ -23,6 +23,8 @@ const BlockBirdBackup = () => (
       width: '100%',
       height: '100%',
       background: 'none',
+      border: '1px solid rgba(255, 255, 255, 0.5)',
+
     }}
   >
     {data.map((item, idx) => (
@@ -34,7 +36,7 @@ const BlockBirdBackup = () => (
           margin: '50px 10px 10px 10px',
           borderRadius: 6,
           color: Colors.text,
-          border: '1px solid white',
+          border: '1px solid rgba(255, 255, 255, 0.5)',
           boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
           cursor: 'move',
         }}

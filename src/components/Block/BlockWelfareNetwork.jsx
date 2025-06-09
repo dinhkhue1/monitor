@@ -34,7 +34,7 @@ const BlockWelfareNetwork = () => (
           margin: 8,
           borderRadius: 6,
           color: Colors.text,
-          border: '1px solid white',
+          border: '1px solid rgba(255, 255, 255, 0.5)',
           boxShadow: '1px 1px 2px rgba(0,0,0,0.5)',
           cursor: 'move',
           marginTop: idx === 0 ? 50 : 8

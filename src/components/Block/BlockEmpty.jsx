@@ -25,6 +25,7 @@ const BlockEmpty = () => (
       background: '#1f1f1f',
       display: 'flex',
       flexDirection: 'column',
+      border: '1px solid rgba(255, 255, 255, 0.5)',
     }}
   >
     <div style={{ flex: 1, position: 'relative' }}>
@@ -39,7 +40,7 @@ const BlockEmpty = () => (
           top: 0,
           left: 0,
           right: 0,
-          bottom:0
+          bottom: 0
         }}
       />
     </div>

@@ -22,29 +22,33 @@ const { Content } = Layout;
 const App = () => (
   <Layout>
     <Content
-    style={{
-      minHeight: '100vh',
-      backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${Background})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      padding: 20,
-    }}
+      style={{
+        minHeight: '100vh',
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${Background})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        padding: 20,
+      }}
     >
       <Row gutter={20} >
         <Col span={18}
           style={{
-            border: '1px solid #ffffff',
+            background: 'rgba(255, 255, 255, 0.03)',
+            backdropFilter: 'blur(12px)',
+            WebkitBackdropFilter: 'blur(12px)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
+            borderRadius: '8px',
             padding: '8px',
             minHeight: '100vh',
-            borderRadius: '4px'
+
           }}>
           <Row>
             <div
               style={{
-                
+
                 color: '#ffffff',
-                border: '1px solid #ffffff',
+                border: '1px solid rgba(255, 255, 255, 0.4)',
                 padding: '16px',
                 margin: '15px',
                 textAlign: 'center',
@@ -216,19 +220,22 @@ const App = () => (
             <Col
               span={24}
               style={{
-                border: '1px solid #ffffff',
+
                 minHeight: '52vh',
-                borderRadius: '4px',
-                display: 'flex',
-                flexDirection: 'column',
+                background: 'rgba(255, 255, 255, 0.03)',
+                backdropFilter: 'blur(12px)',
+                WebkitBackdropFilter: 'blur(12px)',
+                border: '1px solid rgba(255, 255, 255, 0.15)',
+                borderRadius: '8px',
+                padding: '8px',
               }}
             >
               <Row>
                 <div
                   style={{
-                    
+
                     color: '#ffffff',
-                    border: '1px solid #ffffff',
+                    border: '1px solid rgba(255, 255, 255, 0.4)',
                     padding: '16px',
                     margin: '15px',
                     textAlign: 'center',
@@ -271,18 +278,23 @@ const App = () => (
             </Col>
           </Row>
 
-          <Row style={{marginTop: 10}}>
+          <Row style={{ marginTop: 10 }}>
             <Col span={24} style={{
-              border: '1px solid #ffffff',
+              background: 'rgba(255, 255, 255, 0.03)',
+              backdropFilter: 'blur(12px)',
+              WebkitBackdropFilter: 'blur(12px)',
+              border: '1px solid rgba(255, 255, 255, 0.15)',
+              borderRadius: '8px',
+              padding: '8px',
               minHeight: '48vh',
-              borderRadius: '4px',
+
             }}>
               <Row>
                 <div
                   style={{
-                    
+
                     color: '#ffffff',
-                    border: '1px solid #ffffff',
+                    border: '1px solid rgba(255, 255, 255, 0.4)',
                     padding: '16px',
                     margin: '15px',
                     textAlign: 'center',
@@ -294,27 +306,27 @@ const App = () => (
                 </div>
               </Row>
               <Row style={{
-                    
-                    color: '#ffffff',
-                    border: '1px dashed #ffffff',
-                    padding: '16px',
-                    margin: '20px',
-                    borderRadius: '8px'
-                  }}
-                  justify="center" align="middle">
-                    <BlockInternetLineTop/>
-              </Row>
-              <Row
-              style={{
-                
+
                 color: '#ffffff',
                 border: '1px dashed #ffffff',
                 padding: '16px',
                 margin: '20px',
                 borderRadius: '8px'
               }}
-              justify="center" align="middle">
-                <BlockInternetLineDown/>
+                justify="center" align="middle">
+                <BlockInternetLineTop />
+              </Row>
+              <Row
+                style={{
+
+                  color: '#ffffff',
+                  border: '1px dashed #ffffff',
+                  padding: '16px',
+                  margin: '20px',
+                  borderRadius: '8px'
+                }}
+                justify="center" align="middle">
+                <BlockInternetLineDown />
               </Row>
             </Col>
           </Row>

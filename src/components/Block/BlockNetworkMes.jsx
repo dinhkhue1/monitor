@@ -25,6 +25,7 @@ const BlockNetworkMes = () => (
       height: '100%',
       width: '100%',
       background: 'none',
+      border: '1px solid rgba(255, 255, 255, 0.5)',
     }}
   >
     <div style={{margin: '260px 0px 0px 0px'}}><ItemList data={data1} color = {Colors.orange} /></div>
