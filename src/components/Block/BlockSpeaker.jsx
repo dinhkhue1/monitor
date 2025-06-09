@@ -3,9 +3,52 @@ import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 import ItemList from '../common/ItemList'
 
-const data1 = ['AMPLY', 'AMPLY'];
-const data2 = ['ZONE CONTROL'];
-const data3 = ['AMPLY', 'AMPLY','AMPLY', 'AMPLY','AMPLY', 'AMPLY'];
+const data1 = [
+  {
+    label : 'AMPLY',
+    status: 'START'
+  },
+  {
+    label : 'AMPLY',
+    status: 'STOP'
+  },
+  {
+    label : 'AMPLY',
+    status: 'STOP'
+  }
+]
+const data2 = [
+  {
+    label : 'ZONE CONTROL',
+    status: 'START'
+  }
+]
+const data3 = [
+  {
+    label : 'AMPLY',
+    status: 'START'
+  },
+  {
+    label : 'AMPLY',
+    status: 'STOP'
+  },
+  {
+    label : 'AMPLY',
+    status: 'STOP'
+  },
+  {
+    label : 'AMPLY',
+    status: 'START'
+  },
+  {
+    label : 'AMPLY',
+    status: 'STOP'
+  },
+  {
+    label : 'AMPLY',
+    status: 'STOP'
+  }
+]
 
 const BlockSpeaker = () => (
   <Card

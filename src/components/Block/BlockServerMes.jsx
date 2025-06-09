@@ -3,8 +3,55 @@ import Colors from '../../help/rootcss';
 import { Card } from 'antd';
 import ItemList from '../common/ItemList'
 
-const data1 = ['SWITCH L2- MES SERVER', 'SANSWITCH', 'SWITCH L3- MES SERVER'];
-const data2 = ['SPC Server', 'Nakivo Server', 'VIPM', 'EXSI-04', 'EXSI-03', 'EXSI-02', 'EXSI-01', 'Storage'];
+
+const data1 = [
+  {
+    label : 'SWITCH L2- MES SERVER',
+    status: 'START'
+  },
+  {
+    label : 'SANSWITCH',
+    status: 'STOP'
+  },
+  {
+    label : 'SWITCH L3- MES SERVER',
+    status: 'STOP'
+  }
+]
+const data2 = [
+  {
+    label : 'SPC Server',
+    status: 'START'
+  },
+  {
+    label : 'Nakivo Server',
+    status: 'STOP'
+  },
+  {
+    label : 'VIPM',
+    status: 'STOP'
+  },
+  {
+    label : 'EXSI-04',
+    status: 'STOP'
+  },
+  {
+    label : 'EXSI-03',
+    status: 'STOP'
+  },
+  {
+    label : 'EXSI-02',
+    status: 'STOP'
+  },
+  {
+    label : 'EXSI-01',
+    status: 'STOP'
+  },
+  {
+    label : 'Storage',
+    status: 'STOP'
+  }
+]
 
 const BlockServerMes = () => (
   <Card
