@@ -19,7 +19,7 @@ import Background from '../style/images/slider_img_5.jpg';
 
 const { Content } = Layout;
 
-const App = () => (
+const DashBoard = () => (
   <Layout>
     <Content
       style={{
@@ -78,7 +78,7 @@ const App = () => (
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     alignItems: 'stretch',
                   }}
                 >
@@ -94,7 +94,7 @@ const App = () => (
                   style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     justifyContent: 'flex-end',
                   }}
                 >
@@ -106,7 +106,7 @@ const App = () => (
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     alignItems: 'stretch',
                   }}
                 >
@@ -123,7 +123,7 @@ const App = () => (
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     alignItems: 'stretch',
                   }}
                 >
@@ -135,7 +135,7 @@ const App = () => (
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     alignItems: 'stretch',
                   }}
                 >
@@ -176,7 +176,7 @@ const App = () => (
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     alignItems: 'stretch',
                   }}
                   span={12}
@@ -192,7 +192,7 @@ const App = () => (
                   style={{
                     display: 'flex',
                     flexDirection: 'column',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     alignItems: 'stretch',
                     justifyContent: 'flex-end',
                   }}
@@ -205,7 +205,7 @@ const App = () => (
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'flex-end',
-                    minHeight: '570px',
+                    minHeight: '680px',
                     alignItems: 'stretch',
                   }}
                 >
@@ -340,4 +340,4 @@ const App = () => (
   </Layout>
 );
 
-export default App;
+export default DashBoard;

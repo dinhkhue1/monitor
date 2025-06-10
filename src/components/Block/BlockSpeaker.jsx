@@ -43,10 +43,6 @@ const data3 = [
   {
     label : 'AMPLY',
     status: 'STOP'
-  },
-  {
-    label : 'AMPLY',
-    status: 'STOP'
   }
 ]
 

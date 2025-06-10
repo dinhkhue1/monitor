@@ -2,12 +2,29 @@ import React from 'react';
 import Colors from '../../help/rootcss';
 import { Button, Row, Col } from "antd";
 
+const blinkAnimation = {
+  animation: 'blink 1s infinite',
+};
+
+const styleSheet = `
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+`;
+
+// Inject keyframes vào DOM
+const BlinkStyle = () => <style>{styleSheet}</style>;
+
 const ItemList = ({ data, color, margin = '5px' }) => {
   const getStatusColor = (status) => {
     return status === 'START' ? 'green' : 'red';
   };
 
+
   return (
+    <>
+      <BlinkStyle />
     <div style={{ width: '100%' }}>
       {data.map((item, idx) => (
         <Row
@@ -33,13 +50,15 @@ const ItemList = ({ data, color, margin = '5px' }) => {
               style={{
                 backgroundColor: getStatusColor(item.status),
                 width: 16,
-                height: 25
+                height: 25,
+                ...(item.status === 'START' ? {} : blinkAnimation),
               }}
             />
           </Col>
         </Row>
       ))}
     </div>
+    </>
   );
 };
 
