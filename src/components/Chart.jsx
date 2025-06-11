@@ -9,8 +9,8 @@ const { Panel } = Collapse;
 
 const { Content } = Layout;
 const data = {
-  top : [18, 25 , 75 , 30], 
-  bottom : [50, 25 , 90 , 30]
+  top: [18, 25, 75, 30],
+  bottom: [50, 25, 90, 30]
 }
 
 const chartData = [
@@ -145,7 +145,7 @@ const Chart = () => (
         padding: 20,
       }}
     >
-      <Row gutter={[10, 10]}>
+      <Row gutter={[10, 10]} style={{ minHeight: '55vh' }}>
         <Col span={12}>
           <div style={{
             background: 'rgba(255, 255, 255, 0.03)',
@@ -153,11 +153,12 @@ const Chart = () => (
             border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '8px',
             padding: '8px',
-            minHeight: '55vh',
+            height: '100%',
           }}>
-            {/* Nội dung */}
+            {/* Nội dung khác */}
           </div>
         </Col>
+
         <Col span={6}>
           <div style={{
             background: 'rgba(255, 255, 255, 0.03)',
@@ -165,14 +166,20 @@ const Chart = () => (
             border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '8px',
             padding: '8px',
-            minHeight: '55vh',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column'
           }}>
             <h3 style={{ textAlign: 'center', borderBottom: '1px solid gray', color: '#fff' }}>CHART</h3>
-            <Row style={{minHeight: '15vh', width: '100%'}}><ChartBox title="FACTORY 1" style={{ width: '100%' }}/></Row>
-            <Row style={{minHeight: '15vh', width: '100%'}}><ChartBox title="FACTORY 1" style={{ width: '100%' }}/></Row>
-            <Row style={{minHeight: '15vh', width: '100%'}}><ChartBox title="FACTORY 1" style={{ width: '100%' }}/></Row>
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              {[1, 2, 3].map(i => (
+                <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', marginBottom: i !== 3 ? '8px' : '0' }}>
+                  <ChartBox title={`FACTORY ${i}`} />
+                </div>
+              ))}
+            </div>
           </div>
-        </Col>
+        </Col> 
         <Col span={6}>
           <div style={{
             background: 'rgba(255, 255, 255, 0.03)',
@@ -180,26 +187,32 @@ const Chart = () => (
             border: '1px solid rgba(255, 255, 255, 0.15)',
             borderRadius: '8px',
             padding: '8px',
-            minHeight: '55vh',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column'
           }}>
             <h3 style={{ textAlign: 'center', borderBottom: '1px solid gray', color: '#fff' }}>SUMMARY</h3>
-            <SummaryBox factory="FACTORY 1" lines={["PKG 1", "PKG 2", "PKG VCM"]} />
-            <SummaryBox factory="FACTORY 2" lines={["SMT", "ATC", "VCM"]} />
-            <SummaryBox factory="FACTORY 3" lines={["SMT-SIP", "FNL", "SML"]} />
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              {[1, 2, 3].map(i => (
+                <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', marginBottom: i !== 3 ? '8px' : '0' }}>
+                  <SummaryBox factory={`FACTORY ${i}`} lines={["SMT", "ATC", "VCM"]} />
+                </div>
+              ))}
+            </div>
           </div>
         </Col>
       </Row>
-      <Row  style={{ marginTop: '10px' }}>
+      <Row style={{ marginTop: '10px' }}>
         <Col
           span={24}
         >
           <Row gutter={[10, 10]}>
             {data.top.map((item, idx) => (
-              <Col span={6}><CoatingDashboard value={ item } /></Col>
+              <Col span={6}><CoatingDashboard value={item} /></Col>
             ))}
           </Row>
         </Col>
-        
+
       </Row>
       <Row style={{ marginTop: '10px' }}>
         <Col
@@ -207,11 +220,11 @@ const Chart = () => (
         >
           <Row gutter={[10, 10]}>
             {data.bottom.map((item, idx) => (
-              <Col span={6}><CoatingDashboard value={ item } /></Col>
+              <Col span={6}><CoatingDashboard value={item} /></Col>
             ))}
           </Row>
         </Col>
-        
+
       </Row>
     </Content>
   </Layout>
